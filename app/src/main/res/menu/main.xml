@@ -11,12 +11,12 @@
         android:title="@string/downloads"
         app:showAsAction="ifRoom" />
     <item android:id="@+id/recommendations"
-        android:title="Recommendations"
+        android:title="@string/recommendations"
         app:showAsAction="ifRoom" />
     <item android:id="@+id/settings"
-        android:title="Settings"
+        android:title="@string/settings"
         app:showAsAction="ifRoom" />
     <item android:id="@+id/about"
-        android:title="About"
+        android:title="@string/about"
         app:showAsAction="ifRoom" />
 </menu>
