@@ -1,5 +1,6 @@
 package com.example.sudhir.design;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -60,20 +61,33 @@ public class MainActivity extends AppCompatActivity {
             case R.id.save_menu:
                 Toast.makeText(this, "You have selected Save Menu", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.downloads:
-                Toast.makeText(this, "You have selected Search Menu", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.recommendations:
-                Toast.makeText(this, "You have selected Share Menu", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.settings:
-                Toast.makeText(this, "You have selected Delete Menu", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.about:
-                Toast.makeText(this, "You have selected Print menu", Toast.LENGTH_SHORT).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
         }
+
+        switch (item.getItemId()){
+            case R.id.downloads:
+                Intent intent = new Intent(MainActivity.this,downloads.class);
+                 startActivity(intent);
+        }
+
+        switch (item.getItemId()){
+            case R.id.recommendations:
+            Intent intent= new Intent(MainActivity.this,recommendations.class);
+            startActivity(intent);
+        }
+
+        switch (item.getItemId()){
+            case R.id.settings:
+                Intent intent=new Intent(MainActivity.this,settings.class);
+                startActivity(intent);
+        }
+
+        switch(item.getItemId()){
+            case R.id.about:
+                Intent intent= new Intent(MainActivity.this,about.class);
+                startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
+
     }
 }
