@@ -17,6 +17,7 @@ public class downloads extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent downloading = new Intent(downloads.this.)
+                        sdfadfasdfasf
             }
         });
     }
