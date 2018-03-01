@@ -17,11 +17,11 @@ public final class R {
         public static final int fontWeight = 0x7f030094;
     }
     public static final class id {
-        public static final int ghost_view = 0x7f080048;
-        public static final int italic = 0x7f080050;
-        public static final int normal = 0x7f080065;
-        public static final int parent_matrix = 0x7f08006d;
-        public static final int save_image_matrix = 0x7f080076;
+        public static final int ghost_view = 0x7f080049;
+        public static final int italic = 0x7f080051;
+        public static final int normal = 0x7f080066;
+        public static final int parent_matrix = 0x7f08006e;
+        public static final int save_image_matrix = 0x7f080077;
         public static final int save_non_transition_alpha = 0x7f080078;
         public static final int save_scale_type = 0x7f080079;
         public static final int transition_current_scene = 0x7f0800b0;

@@ -4,8 +4,8 @@
     <item android:id="@+id/bookmark_menu"
         android:title="@string/bookmark"
         app:showAsAction="always" />
-    <item android:id="@+id/save_menu"
-        android:title="@string/save"
+    <item android:id="@+id/speaker"
+        android:title="@string/speaker"
         app:showAsAction="always" />
     <item android:id="@+id/downloads"
         android:title="@string/downloads"

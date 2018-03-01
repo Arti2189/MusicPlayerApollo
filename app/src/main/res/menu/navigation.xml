@@ -21,6 +21,4 @@
         android:icon="@drawable/ic_songs_icon"
         android:title="@string/songs_string"/>
 
-
-
 </menu>

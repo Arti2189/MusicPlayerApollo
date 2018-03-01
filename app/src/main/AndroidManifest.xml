@@ -18,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".downloads" />
+        <activity android:name=".recommendations" />
+        <activity android:name=".settings" />
+        <activity android:name=".about" />
+        <activity android:name=".artist"></activity>
     </application>
 
 </manifest>

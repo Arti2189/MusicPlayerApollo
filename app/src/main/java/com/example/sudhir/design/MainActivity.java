@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.bookmark_menu:
                 Toast.makeText(this, "You have selected Bookmark Menu", Toast.LENGTH_SHORT).show();
                 return true;
-            case R.id.save_menu:
+            case R.id.speaker:
                 Toast.makeText(this, "You have selected Save Menu", Toast.LENGTH_SHORT).show();
                 return true;
         }
