@@ -22,7 +22,11 @@
         <activity android:name=".recommendations" />
         <activity android:name=".settings" />
         <activity android:name=".about" />
-        <activity android:name=".artist"></activity>
+        <activity android:name=".artist" />
+        <activity android:name=".navigation_home" />
+        <activity android:name=".navigation_dashboard" />
+        <activity android:name=".navigation_notifications" />
+        <activity android:name=".songs"></activity>
     </application>
 
 </manifest>

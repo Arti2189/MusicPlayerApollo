@@ -7,12 +7,18 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
+    public Button navigation_home;
+    public Button navigation_dashboard;
+    public Button navigation_notifications;
+    public Button songs;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -39,6 +45,45 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    public void init(){
+        navigation_home = (Button)findViewById(R.id.navigation_home);
+        navigation_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toy = new Intent(MainActivity.this,navigation_home.class);
+                     startActivity(toy);
+            }
+        });
+
+        navigation_dashboard = (Button)findViewById(R.id.navigation_dashboard);
+        navigation_dashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toy = new Intent(MainActivity.this,navigation_dashboard.class);
+                 startActivity(toy);
+            }
+        });
+
+        navigation_notifications = (Button)findViewById(R.id.navigation_dashboard);
+        navigation_dashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toy = new Intent(MainActivity.this,navigation_notifications.class);
+                startActivity(toy);
+            }
+        });
+
+        songs = (Button)findViewById(R.id.songs);
+        songs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toy = new Intent(MainActivity.this,songs.class);
+                 startActivity(toy);
+            }
+        });
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        init();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
